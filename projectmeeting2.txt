@@ -1,0 +1,12 @@
+2nd meeting took place in which problem statment that was disussed in 1st meeting was elobrated.
+We also discussed or project that is lazy loading pattren.
+The practice of delaying the loading of an object until we require it is known as lazy loading.
+In easy words, lazy loading is a software design pattern that prioritizes user-friendliness and performance by requiring object initialization only when it is absolutely necessary.
+We also discussed the ways in which this can be implemented.There are four common implementations of Lazy Loading pattern namely: Virtual proxy,Lazy initialization,Ghost,Value holder
+Virtual proxy:The Virtual Proxy pattern is a memory-saving strategy that suggests delaying the creation of an object until it is required. When making an object that requires a lot of processing or memory, this method is used.
+Lazy initialization:When a class field is being used, the Lazy Initialization technique checks its value. Before it is returned, that field is loaded with the correct value if that value is null.
+Ghost:The object that will be loaded in a partial state is called a ghost. It is comparable to the actual object, but not in its entirety. It could be empty, or it could only have some fields, like the ID. 
+The ghost object fully initializes itself (although this is not always required) when the user attempts to access fields that have not yet been loaded.
+Value holder:A value holder is, in essence, a generic object that takes care of the lazy loading behavior and replaces the object's data fields. By calling the GetValue method, the user can simply request the value from the value holder whenever they need to access it.
+The value is loaded from a database or a service at that point, and only then.
+This is all what was discussed in 2nd meeting. 
