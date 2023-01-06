@@ -62,5 +62,56 @@ namespace ACM_System.DAL
 
             return table;
         }
+        //select Method
+        public DataTable SelectData()
+        {
+            DataTable table = new DataTable();
+            try
+            {
+                string sql = "SELECT * FROM sms_mail";
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                connection.Open();
+                adapter.Fill(table);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return table;
+        }
+
+        //Insert Method
+        public bool InsertData(ShowEmailSmsBLL emailSms)
+        {
+            try
+            {
+                string sql = "INSERT INTO sms_mail(clientid,message,subject,status) VALUES(@clientid,@message,@subject,@status)";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@clientid", emailSms.ClientId);
+                command.Parameters.AddWithValue("@message", emailSms.Message);
+                command.Parameters.AddWithValue("@subject", emailSms.Subject);
+                command.Parameters.AddWithValue("@status", emailSms.status);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            catch
+            {
+                connection.Close();
+            }
+
+            return true;
+        }
     }
 }

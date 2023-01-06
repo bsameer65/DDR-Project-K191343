@@ -59,3 +59,4 @@ D:\project ipt\ACM System\obj\Debug\ACM System.csproj.GenerateResource.cache
 D:\project ipt\ACM System\obj\Debug\ACM System.csproj.CoreCompileInputs.cache
 D:\project ipt\ACM System\obj\Debug\ACM System.exe
 D:\project ipt\ACM System\obj\Debug\ACM System.pdb
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM System.csproj.SuggestedBindingRedirects.cache

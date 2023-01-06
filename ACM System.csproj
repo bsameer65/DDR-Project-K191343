@@ -84,12 +84,6 @@
     <Compile Include="GUI\ShowEmailSms.Designer.cs">
       <DependentUpon>ShowEmailSms.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\SMS_Email_Send.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\SMS_Email_Send.Designer.cs">
-      <DependentUpon>SMS_Email_Send.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Admin.resx">
@@ -106,9 +100,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ShowEmailSms.resx">
       <DependentUpon>ShowEmailSms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\SMS_Email_Send.resx">
-      <DependentUpon>SMS_Email_Send.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

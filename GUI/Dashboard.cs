@@ -55,6 +55,12 @@ namespace ACM_System
             client.Show();
         }
 
-        
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ShowEmailSms emailSms = new ShowEmailSms();
+            emailSms.Show();
+
+        }
     }
 }
