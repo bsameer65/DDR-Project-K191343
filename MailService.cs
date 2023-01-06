@@ -42,5 +42,20 @@ namespace ACM_System
 
         }
     }
-
+    public class MailServiceVirtualProxy : IMailService
+    {
+        string loggedUserEmail, loggedUserPassword;
+        string textTo, subject, msg;
+        private MailService ms;
+        public MailServiceVirtualProxy(string logemail, string logpass, string text, string subj, string message)
+        {
+            loggedUserEmail = logemail;
+            loggedUserPassword = logpass;
+            textTo = text;
+            subject = subj;
+            msg = message;
+        }
+        
     }
+
+}
