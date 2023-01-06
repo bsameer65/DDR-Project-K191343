@@ -55,7 +55,19 @@ namespace ACM_System
             subject = subj;
             msg = message;
         }
-        
+        public void sendmail()
+        {
+            if (ms == null)
+            {
+                ms = createMailService();
+            }
+            ms.sendmail();
+
+        }
+        private MailService createMailService()
+        {
+            return new MailService(loggedUserEmail, loggedUserPassword, textTo, subject, msg);
+        }
     }
 
 }
