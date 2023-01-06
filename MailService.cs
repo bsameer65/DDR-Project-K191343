@@ -27,6 +27,20 @@ namespace ACM_System
             msg = message;
 
         }
+        public void sendmail()
+        {
+            MailMessage mailMessage = new MailMessage(this.loggedUserEmail, this.textTo, this.subject, this.msg);
+            mailMessage.IsBodyHtml = true;
+            SmtpClient client = new SmtpClient();
+            client.Port = 587;
+            client.Host = "smtp.gmail.com";
+            client.UseDefaultCredentials = false;
+            NetworkCredential ClientCredential = new NetworkCredential(this.loggedUserEmail, this.loggedUserPassword);
+            client.Credentials = ClientCredential;
+            client.EnableSsl = true;
+            client.Send(mailMessage);
+
+        }
     }
 
     }
