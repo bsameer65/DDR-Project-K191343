@@ -13,6 +13,20 @@ namespace ACM_System
     {
          void sendmail();
     }
-    
+    public class MailService : IMailService
+    {
+        string loggedUserEmail, loggedUserPassword;
+        string textTo, subject, msg;
 
-}
+        public MailService(string logemail, string logpass, string text, string subj, string message)
+        {
+            loggedUserEmail = logemail;
+            loggedUserPassword = logpass;
+            textTo = text;
+            subject = subj;
+            msg = message;
+
+        }
+    }
+
+    }
