@@ -1,0 +1,61 @@
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\bin\Debug\ACM System.exe.config
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\bin\Debug\ACM System.exe
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\bin\Debug\ACM System.pdb
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM System.csproj.AssemblyReference.cache
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.Login.resources
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.Properties.Resources.resources
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM System.csproj.GenerateResource.cache
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM System.csproj.CoreCompileInputs.cache
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM System.exe
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM System.pdb
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.Dashboard.resources
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.Admin.resources
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.GUI.Clients.resources
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.GUI.SMS_Email_Send.resources
+D:\Semester # 7\Information Processing Techniques (IPT)\ACM System\obj\Debug\ACM_System.GUI.ShowEmailSms.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\bin\Debug\ACM System.exe.config
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\bin\Debug\ACM System.exe
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\bin\Debug\ACM System.pdb
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM System.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.Admin.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.GUI.Clients.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.Dashboard.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.Login.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.GUI.ShowEmailSms.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.GUI.SMS_Email_Send.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM_System.Properties.Resources.resources
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM System.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM System.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM System.exe
+C:\Users\HP\Desktop\7TH SEM\IPT\ACM System\obj\Debug\ACM System.pdb
+C:\Users\SAMEER\Desktop\ACM System\bin\Debug\ACM System.exe.config
+C:\Users\SAMEER\Desktop\ACM System\bin\Debug\ACM System.exe
+C:\Users\SAMEER\Desktop\ACM System\bin\Debug\ACM System.pdb
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM System.csproj.AssemblyReference.cache
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.Admin.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.GUI.Clients.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.Dashboard.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.Login.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.GUI.ShowEmailSms.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.GUI.SMS_Email_Send.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM_System.Properties.Resources.resources
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM System.csproj.GenerateResource.cache
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM System.csproj.CoreCompileInputs.cache
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM System.exe
+C:\Users\SAMEER\Desktop\ACM System\obj\Debug\ACM System.pdb
+D:\project ipt\ACM System\bin\Debug\ACM System.exe.config
+D:\project ipt\ACM System\bin\Debug\ACM System.exe
+D:\project ipt\ACM System\bin\Debug\ACM System.pdb
+D:\project ipt\ACM System\obj\Debug\ACM System.csproj.AssemblyReference.cache
+D:\project ipt\ACM System\obj\Debug\ACM System.csproj.SuggestedBindingRedirects.cache
+D:\project ipt\ACM System\obj\Debug\ACM_System.Admin.resources
+D:\project ipt\ACM System\obj\Debug\ACM_System.GUI.Clients.resources
+D:\project ipt\ACM System\obj\Debug\ACM_System.Dashboard.resources
+D:\project ipt\ACM System\obj\Debug\ACM_System.Login.resources
+D:\project ipt\ACM System\obj\Debug\ACM_System.GUI.ShowEmailSms.resources
+D:\project ipt\ACM System\obj\Debug\ACM_System.GUI.SMS_Email_Send.resources
+D:\project ipt\ACM System\obj\Debug\ACM_System.Properties.Resources.resources
+D:\project ipt\ACM System\obj\Debug\ACM System.csproj.GenerateResource.cache
+D:\project ipt\ACM System\obj\Debug\ACM System.csproj.CoreCompileInputs.cache
+D:\project ipt\ACM System\obj\Debug\ACM System.exe
+D:\project ipt\ACM System\obj\Debug\ACM System.pdb

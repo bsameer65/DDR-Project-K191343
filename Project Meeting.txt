@@ -1,6 +1,0 @@
-We had a meeting regarding our project and discussed about the problem statement of our project.
-The problem statement of our project is When we make an object or implementing some other functionality we sometimes load the unnecessary objects
-In result the loading of unnecessary objects will occupy memory and also it will take time to create objects.
-We also discussed an example regarding our problem statement. The example we discussed was customer and their orders.
-when we are creating object for customer at that time we only need customers data not data about the orders class but unfortunately it was loading orders too
-so we map that example with our problem statement. That's all we discussed in our meeting.
