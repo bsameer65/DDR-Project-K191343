@@ -142,6 +142,24 @@ namespace ACM_System.GUI
 
             dgvAddedClient.DataSource = MessageTable;
         }
+        private void comboBoxCity_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBoxCity.Text != "")
+            {
+                DataTable table = clientDAL.Value.SearchData(comboBoxCity.Text);
+                dgvAddedClient.DataSource = table;
+            }
+        }
+
+        private void comboBoxStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxStatus.Text != "")
+            {
+                DataTable table = clientDAL.Value.SearchData(comboBoxStatus.Text);
+                dgvAddedClient.DataSource = table;
+            }
+
+        }
 
         
     }
