@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ACM_System.GUI.SMS_Email_Send;
 namespace ACM_System
 {
     public partial class Dashboard : Form
@@ -61,6 +61,21 @@ namespace ACM_System
             ShowEmailSms emailSms = new ShowEmailSms();
             emailSms.Show();
 
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formType = "On Email Address";
+            this.Close();
+            SMS_Email_Send message = new SMS_Email_Send();
+            message.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            formType = "On Phone Number";
+            this.Close();
+            SMS_Email_Send message = new SMS_Email_Send();
+            message.Show();
         }
     }
 }

@@ -106,7 +106,7 @@ namespace ACM_System.DAL
                 MessageBox.Show(ex.Message);
                 return false;
             }
-            catch
+            finally
             {
                 connection.Close();
             }
