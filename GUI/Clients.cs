@@ -174,5 +174,60 @@ namespace ACM_System.GUI
                 return false;
             }
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textID.Text != "" && textBoxname.Text != "" && textBoxemail.Text != "" && textBoxPhone.Text != "" && comboBoxGender.Text != ""
+                && textBoxCity.Text != "" && textBoxAddress.Text != "" && textBoxCity.Text != "" && textStatus.Text != "" && textBoxNotes.Text != "")
+            {
+                clientBLL.ID = int.Parse(textID.Text);
+                clientBLL.Name = textBoxname.Text;
+                clientBLL.Email = textBoxemail.Text;
+                clientBLL.Phone = textBoxPhone.Text;
+                clientBLL.Gender = comboBoxGender.Text;
+                clientBLL.City = textBoxCity.Text;
+                clientBLL.Address = textBoxAddress.Text;
+                clientBLL.Status = textStatus.Text;
+                clientBLL.Notes = textBoxNotes.Text;
+                clientBLL.addedDate = DateTime.Now;
+
+                if (checkMail(textBoxemail.Text))
+                {
+                    if (clientDAL.UpdateData(clientBLL))
+                    {
+                        MessageBox.Show("Data Updated");
+                        DataTable table = clientDAL.SelectData();
+                        dgvClient.DataSource = table;
+                        reset();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter all the fields");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textID.Text != "")
+            {
+                if (MessageBox.Show("Are You Sure to Delete this record ?", "Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    clientBLL.ID = int.Parse(textID.Text);
+
+                    if (clientDAL.DeleteData(clientBLL))
+                    {
+                        MessageBox.Show("Data Deleted");
+                        DataTable table = clientDAL.SelectData();
+                        dgvClient.DataSource = table;
+                        reset();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select the record first");
+            }
+        }
     }
 }
