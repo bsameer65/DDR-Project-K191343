@@ -128,7 +128,29 @@ namespace ACM_System.DAL
             }
             return true;
         }
+        public DataTable SearchData(string keyword)
+        {
+            DataTable table = new DataTable();
+            try
+            {
 
+                string sql = "SELECT * FROM Client WHERE id LIKE '%"+keyword+"%' OR name LIKE '%"+keyword+ "%' OR status='"+keyword+"' OR city= '"+keyword+"' ";
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                connection.Open();
+                adapter.Fill(table);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return table;
+        }
         
     }
     
