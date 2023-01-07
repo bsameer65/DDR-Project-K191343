@@ -104,6 +104,30 @@ namespace ACM_System.DAL
             }
             return true;
         }
+        public bool DeleteData(ClientBLL client)
+        {
+            try
+            {
+                string sql = "DELETE FROM Client WHERE id=@id";
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                command.Parameters.AddWithValue("@id", client.ID);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return true;
+        }
 
         
     }
