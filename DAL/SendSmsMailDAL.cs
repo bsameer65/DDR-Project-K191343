@@ -36,6 +36,30 @@ namespace ACM_System.DAL
             
             return table;
         }
+        //Select Distinct Status
+        public DataTable UniqueStatusSelection()
+        {
+            DataTable table = new DataTable();
+            try
+            {
+                string sql = "SELECT DISTINCT status FROM Client";
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                connection.Open();
+                adapter.Fill(table);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return table;
+        }
 
 
         
