@@ -160,6 +160,72 @@ namespace ACM_System.GUI
             }
 
         }
+         private void btnSend_Click(object sender, EventArgs e)
+        {
+            string logedUserEmail = Login.userEmail;
+            string logeedUserPassword = Login.userPassword;
+            int success = 0;
+            Console.WriteLine(logedUserEmail);
+            Console.WriteLine(logeedUserPassword);
+
+            if (textBoxSubject.Text != "" && textMessage.Text != "" && dgvAddedClient.Rows.Count>1)
+            {
+                //if(Dashboard.formType == "Email")
+                //{
+                    for (int i = 0; i < dgvAddedClient.Rows.Count - 1; i++)
+                    {
+                        try
+                        { //pattern implementation
+                        string textTo = dgvAddedClient.Rows[i].Cells[2].Value.ToString();
+                        MessageBox.Show(textTo);
+                        MessageBox.Show(logedUserEmail + " logged with");
+                        String subject = textBoxSubject.Text;
+                        String msg = textMessage.Text;
+                        MailServiceVirtualProxy vp=new MailServiceVirtualProxy(logedUserEmail,logeedUserPassword,
+                                                    textTo,subject,msg);
+                        vp.sendmail();
+                        success++;
+                        int ClientID = int.Parse(dgvAddedClient.Rows[i].Cells[0].Value.ToString());
+                        InsertDataSmsEmail(ClientID, textMessage.Text, Dashboard.formType, textBoxSubject.Text);
+                    }
+                       catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                            break;
+                        }
+                    
+                    }
+                    if (success > 0)
+                    {
+                        MessageBox.Show(success + " Mail Sent.");
+                        reset();
+                    }
+               
+                
+            }
+            else
+            {
+                MessageBox.Show("Plead enter all the fields");
+            }
+        }
+
+        private void dgvClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        public void InsertDataSmsEmail(int clientID, string messageText, string status, string subject)
+        {
+            ShowEmailSmsBLL smsMessageBLL = new ShowEmailSmsBLL();
+            ShowEmailSmsDAL smsMessageDAL = new ShowEmailSmsDAL();
+
+            smsMessageBLL.ClientId = clientID;
+            smsMessageBLL.Message = messageText;
+            smsMessageBLL.status = status;
+            smsMessageBLL.Subject = subject;
+
+            smsMessageDAL.InsertData(smsMessageBLL);
+        }
 
         
     }
